@@ -1,0 +1,46 @@
+### list all posts
+GET http://localhost:8080/api/posts
+Content-Type: application/json
+
+### create a post
+POST http://localhost:8080/api/posts
+Content-Type: application/json
+
+{
+  "title": "111",
+  "content": "This is a sample post content.",
+  "userId": "user456",
+  "createdAt": "2024-04-26T10:00:00"
+}
+
+### get a post by ID
+GET http://localhost:8080/api/posts/{id}
+Content-Type: application/json
+
+### update a post
+PUT http://localhost:8080/api/posts/{id}
+Content-Type: application/json
+
+### delete a post
+DELETE http://localhost:8080/api/posts/{id}
+Content-Type: application/json
+
+### get all comments
+GET http://localhost:8080/api/comments
+Content-Type: application/json
+
+### get a comment by ID
+GET http://localhost:8080/api/comments/{id}
+Content-Type: application/json
+
+### create a comment
+POST http://localhost:8080/api/comments
+Content-Type: application/json
+
+### update a comment
+PUT http://localhost:8080/api/comments/{id}
+Content-Type: application/json
+
+### delete a comment
+DELETE http://localhost:8080/api/comments/{id}
+Content-Type: application/json
